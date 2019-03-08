@@ -1,0 +1,31 @@
+server:
+  port: 8001
+
+spring:
+  application:
+    name: bms-auth
+  profiles:
+    active: dev
+  #配置中心
+  cloud:
+    config:
+      fail-fast: true
+      name: ${spring.application.name}
+      profile: ${spring.profiles.active}
+      label: ${spring.profiles.active}
+      discovery:
+        enabled: true
+        service-id: bms-config
+      username: plei
+      password: plei
+
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    service-url:
+      defaultZone: http://yangl:yangl@localhost:8761/eureka
+
+mybatis-plus:
+  mapper-locations: classpath*:mapper/**/*.xml
+  typeAliasesPackage: com.github.plei.entity

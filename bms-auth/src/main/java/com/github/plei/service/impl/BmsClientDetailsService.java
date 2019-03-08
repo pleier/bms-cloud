@@ -18,7 +18,7 @@ public class BmsClientDetailsService extends JdbcClientDetailsService {
     }
 
     @Override
-    @Cacheable(value = "bms_oauth:client:details", key = "#clientId", unless = "#result == null")
+    @Cacheable(value = "bms_oauth:client:details", key = "#clientId")
     public ClientDetails loadClientByClientId(String clientId) throws InvalidClientException {
         return super.loadClientByClientId(clientId);
     }
