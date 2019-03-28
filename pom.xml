@@ -9,6 +9,7 @@
         <module>bms-config</module>
         <module>bms-common</module>
         <module>bms-zuul</module>
+        <module>bms-upms</module>
     </modules>
 
     <groupId>com.github.plei</groupId>
@@ -25,6 +26,8 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
+        <mybatis-plus.version>3.1.0</mybatis-plus.version>
+        <hutool.version>4.5.1</hutool.version>
     </properties>
 
     <dependencies>
@@ -86,6 +89,11 @@
                     <groupId>org.springframework.boot</groupId>
                     <artifactId>spring-boot-maven-plugin</artifactId>
                     <version>${spring-boot.version}</version>
+                </plugin>
+                <plugin>
+                    <groupId>com.spotify</groupId>
+                    <artifactId>docker-maven-plugin</artifactId>
+                    <version>0.4.13</version>
                 </plugin>
             </plugins>
         </pluginManagement>

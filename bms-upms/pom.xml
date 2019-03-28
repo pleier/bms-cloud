@@ -9,14 +9,12 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>bms-common</artifactId>
+    <artifactId>bms-upms</artifactId>
+    <packaging>pom</packaging>
+    <modules>
+        <module>bms-upms-api</module>
+        <module>bms-upms-biz</module>
+    </modules>
 
-    <dependencies>
-        <!-- hutool 核心包 -->
-        <dependency>
-            <groupId>cn.hutool</groupId>
-            <artifactId>hutool-core</artifactId>
-            <version>${hutool.version}</version>
-        </dependency>
-    </dependencies>
+
 </project>
