@@ -1,0 +1,4 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  com.github.plei.common.core.config.RedisConfig,\
+  com.github.plei.common.core.config.RestTemplateConfig
+
