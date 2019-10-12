@@ -18,7 +18,7 @@ import java.time.LocalDateTime;
 @Data
 public class SysUser implements Serializable {
     private static final long serialVersionUID = -6457389730888892071L;
-
+    
     /**
      * 主键ID
      */
@@ -28,7 +28,7 @@ public class SysUser implements Serializable {
      * 用户名
      */
     private String username;
-
+    
     private String password;
     /**
      * 随机盐
@@ -48,12 +48,12 @@ public class SysUser implements Serializable {
      */
     @TableLogic
     private String delFlag;
-
+    
     /**
      * 锁定标记
      */
     private String lockFlag;
-
+    
     /**
      * 简介
      */
@@ -62,17 +62,17 @@ public class SysUser implements Serializable {
      * 头像
      */
     private String avatar;
-
+    
     /**
      * 部门ID
      */
     private Integer deptId;
-
+    
     /**
      * 微信openid
      */
     private String wxOpenid;
-
+    
     /**
      * QQ openid
      */

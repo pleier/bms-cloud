@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>bms-auth-server</artifactId>
+    <artifactId>bms-auth</artifactId>
 
 <dependencies>
     <!--配置中心客户端-->
@@ -72,11 +72,6 @@
     <dependency>
         <groupId>org.apache.commons</groupId>
         <artifactId>commons-pool2</artifactId>
-    </dependency>
-    <!--消息总线-->
-    <dependency>
-        <groupId>org.springframework.cloud</groupId>
-        <artifactId>spring-cloud-starter-bus-amqp</artifactId>
     </dependency>
 </dependencies>
 </project>
