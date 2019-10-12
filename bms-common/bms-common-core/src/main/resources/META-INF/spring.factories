@@ -1,4 +1,9 @@
 org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
   com.github.plei.common.core.config.RedisConfig,\
-  com.github.plei.common.core.config.RestTemplateConfig
+  com.github.plei.common.core.config.RestTemplateConfig,\
+  com.github.plei.common.core.config.FilterIgnorePropertiesConfig,\
+  com.github.plei.common.core.config.JacksonConfig,\
+  com.github.plei.common.core.exception.GlobalExceptionHandler,\
+  com.github.plei.common.core.utils.SpringContextHolder,\
+  com.github.plei.common.core.mybatis.WebMvcConfig
 

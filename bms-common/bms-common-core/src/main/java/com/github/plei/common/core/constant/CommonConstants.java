@@ -1,6 +1,8 @@
 package com.github.plei.common.core.constant;
 
 /**
+ * 公共常量类
+ *
  * @author : pleier
  * @date : 2019/3/29
  */
@@ -13,37 +15,37 @@ public interface CommonConstants {
      * 正常
      */
     String STATUS_NORMAL = "0";
-
+    
     /**
      * 锁定
      */
     String STATUS_LOCK = "9";
-
+    
     /**
      * 菜单
      */
     String MENU = "0";
-
+    
     /**
      * 编码
      */
     String UTF8 = "UTF-8";
-
+    
     /**
      * JSON 资源
      */
     String CONTENT_TYPE = "application/json; charset=utf-8";
-
+    
     /**
      * 前端工程名
      */
     String FRONT_END_PROJECT = "bms-cloud-ui";
-
+    
     /**
      * 后端工程名
      */
     String BACK_END_PROJECT = "bms-cloud";
-
+    
     /**
      * 成功标记
      */
@@ -52,7 +54,7 @@ public interface CommonConstants {
      * 失败标记
      */
     Integer FAIL = 1;
-
+    
     /**
      * 验证码前缀
      */
