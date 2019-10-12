@@ -25,6 +25,6 @@ eureka:
     #是否将自己注册到eureka server
     register-with-eureka: false
     serviceUrl:
-      defaultZone: http://yangl:yangl@localhost:${server.port}/eureka/
+      defaultZone: http://yangl:yangl@${eureka.instance.hostname}:${server.port}/eureka/
   instance:
     hostname: localhost
